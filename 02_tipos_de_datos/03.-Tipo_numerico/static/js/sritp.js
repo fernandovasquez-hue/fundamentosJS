@@ -17,7 +17,7 @@ let division = 10 / 2; //5
 let modulo = 10 % 3; //1
 let potencia = 2 ** 3; //8
 
-console.log(` el resultado de 2 elevado a 3 en potencia es: ${2**3}`)
+console.log(` el resultado de 2 elevado a 3 en potencia es: ${2 ** 3}`)
 
 //3.- Incremento y decremento (suma(++) o resta(--) 1)
 let numero = 10;
@@ -50,3 +50,16 @@ console.log("el sueldo base es: " + sueldo);
 //7.- Redondeo de números
 console.log("Redondeando 4.6: " + Math.round(4.6)); //5
 console.log("Redondeando 4.6: " + Math.floor(4.6)); //4
+
+//8.- Numeros aleatorios
+let aleatorio = Math.random(); //entre 0 y 1
+let dado = Math.floor(Math.random() * 6) + 1; //1 al 6
+console.log(`tirar dados : ${dado}`);
+
+//9.- Comparaciones numéricas
+let a = 10;
+let b = 5;
+console.log(a > b);//true
+console.log(a < b);//false
+console.log(a === 10);//true (=== estricta igualdad)
+console.log(b === 3);//false
