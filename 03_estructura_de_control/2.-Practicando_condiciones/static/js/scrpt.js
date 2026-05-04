@@ -65,7 +65,7 @@ function ejercicio5() {
 
 function ejercicio6() {
     let edad = 20;
-    if (edad => 18) {
+    if (edad >= 18) {
         alert(`eres mayor de edad`);
     } else {
         alert(`es menor de edad`);
@@ -161,9 +161,9 @@ function ejercicio12() {
 
 function ejercicio13() {
     let correo = "ejemplo@gmail.com";
-    if (correo >= 15){
+    if (correo >= 15) {
         alert(`El correo convertido es: ${correo} y el resultado es: correo válido`);
-    } else{
+    } else {
         alert(`El correo convertido es: ${correo} y el resultado es: correo inválido`);
     }
 }
@@ -174,7 +174,12 @@ function ejercicio13() {
 // `La frase "Estoy aprendiendo JavaScript" tiene 28 caracteres y corresponde a una frase larga`
 
 function ejercicio14() {
-    alert()
+    let java = "Estoy aprendiendo JavaScript";
+    if (java.length >= 20) {
+        alert(`La frase "${java}" tiene ${java.length} caracteres y corresponde a una frase larga`);
+    } else {
+        alert(`La frase "${java}" tiene ${java.length} caracteres y corresponde a una frase corta`);
+    }
 }
 
 
@@ -183,5 +188,182 @@ function ejercicio14() {
 // `El producto TECLADO tiene un precio final de $45000`
 
 function ejercicio15() {
-    alert()
+    let tec = "teclado";
+    let pre = 50000;
+    let des = 0.1;
+    alert(`El producto ${tec.toLocaleUpperCase()} tiene un precio final de $${pre - pre * des}`);
 }
+// Ejercicio 16: Boleta de compra con clasificación de cliente
+
+// Crear una función que almacene el nombre de un cliente, el nombre de un producto y el precio. Luego:
+// Convertir el nombre del cliente a mayúsculas
+// Determinar el tipo de cliente según el precio:
+// Mayor o igual a 100.000 → Cliente Premium (20% descuento)
+// Mayor o igual a 50.000 → Cliente Frecuente (10% descuento)
+// Menor a 50.000 → Cliente Normal (sin descuento)
+function ejercicio16() {
+    let nom5 = "Harry";
+    let proc = "cacahuete";
+    let pre1 = 300000;
+    let nomMay1 = nom5.toUpperCase();
+    if (pre1 >= 100000) {
+        alert(`El cliente ${nomMay1} es un cliente premiun por lo que el valor de su ${proc}: $${pre1} disminuiría a $${pre1 - pre1 * 0.2}`)
+    } else if (pre1 >= 50000) {
+        alert(`El cliente ${nomMay1} es un cliente frecuente por lo que el valor de su ${proc}: $${pre1} disminuiría a $${pre1 - pre1 * 0.1}`)
+    } else {
+        alert(`El cliente ${nomMay1} es un cliente normal por lo que el valor de su ${proc}: $${pre1} no tendra descuento quedandose como $${pre1}`)
+    }
+}
+
+// Mostrar:
+// Nombre del cliente en mayúsculas
+// Producto en minúsculas
+// Precio original
+// Precio final
+// Tipo de cliente
+
+// Ejercicio 17: Análisis de frase con puntuación
+// Crear una función que almacene una frase y un puntaje numérico. Luego:
+// Convertir la frase a minúsculas
+// Contar la cantidad de caracteres
+// Clasificar el puntaje:
+// 90 o más → Excelente
+// 70 o más → Bueno
+// Menor a 70 → Insuficiente
+
+// Mostrar:
+// Frase transformada
+// Largo de la frase
+// Puntaje
+// Clasificación
+
+// Ejercicio 18: Evaluación de tres notas con estado final
+
+// Crear una función que almacene el nombre de un estudiante y tres notas. Luego:
+
+// Calcular el promedio
+// Convertir el nombre a mayúsculas
+// Determinar el estado:
+// Promedio ≥ 6.0 → Destacado
+// Promedio ≥ 4.0 → Aprobado
+// Promedio < 4.0 → Reprobado
+function ejercicio18() {
+    let nom4 = "Papelucho"
+    let n1 = 2.9;
+    let n2 = 7.0;
+    let n3 = 6.7;
+    let pro = (n1 + n2 + n3) / 3;
+    let nomMay = nom4.toUpperCase();
+    if (pro >= 6) {
+        alert(`El estudiante ${nomMay} esta Destacado.
+            \nPromedio ${pro},
+            \nLargo nombre ${nom4.length}`)
+    } else if (pro >= 4) {
+        alert(`El estudiante ${nomMay} esta Aprobado.
+            \nPromedio ${pro},
+            \nLargo nombre ${nom4.length}`)
+    } else {
+        alert(`El estudiante ${nomMay} esta Reprobado.
+            \nPromedio ${pro},
+            \nLargo nombre ${nom4.length}`)
+    }
+}
+
+// Además:
+// Contar la cantidad de caracteres del nombre
+
+// Mostrar:
+// Nombre en mayúsculas
+// Cantidad de caracteres del nombre
+// Promedio
+// Estado final
+
+// Ejercicio 19: Clasificación de desempeño con más niveles
+// Crear una función que almacene el nombre de un estudiante y su promedio final. Luego:
+
+// Convertir el nombre a mayúsculas
+// Clasificar el rendimiento según:
+// ≥ 6.5 → Sobresaliente
+// ≥ 6.0 → Muy buen rendimiento
+// ≥ 5.0 → Buen rendimiento
+// ≥ 4.0 → Suficiente
+// < 4.0 → Insuficiente
+function ejercicio19() {
+    let nom6 = "Robleis";
+    let no1 = 6.7;
+    let no2 = 6.5;
+    let no3 = 7.0;
+    let pro1 = (no1 + no2 + no3) / 3;
+    let nomMay2 = nom6.toUpperCase();
+    if (pro1 >= 6.5) {
+        alert(`El estudiante ${nomMay2} tiene un sobresaliente
+            \nPromedio: ${pro1},
+            \nLargo nombre ${nom6.length}`)
+    } else if (pro1 >= 6.0) {
+        alert(`El estudiante ${nomMay2} tiene muy buen rendimiento
+            \nPromedio: ${pro1},
+            \nLargo nombre ${nom6.length}`)
+    } else if (pro1 >= 5.0) {
+        alert(`El estudiante ${nomMay2} tiene un buen rendimiento
+            \nPromedio: ${pro1},
+            \nLargo nombre ${nom6.length}`)
+    }else if (pro1 >= 4.0){
+        alert(`El estudiante ${nomMay2} es suficiente
+            \nPromedio: ${pro1},
+            \nLargo nombre ${nom6.length}`)
+    }else{
+        alert(`El estudiante ${nomMay2} es insuficiente
+            \nPromedio: ${pro1},
+            \nLargo nombre ${nom6.length}`)
+    }
+}
+
+// Además:
+
+// Mostrar la cantidad de caracteres del nombre
+
+// Ejercicio 20: Clasificación de producto con múltiples rangos de precio
+// Crear una función que almacene el nombre de un producto y su precio. Luego:
+
+// Convertir el producto a minúsculas
+// Clasificar el precio:
+// ≥ 200.000 → Producto de lujo
+// ≥ 100.000 → Producto premium
+// ≥ 50.000 → Producto estándar
+// ≥ 20.000 → Producto económico
+// < 20.000 → Producto básico
+
+// Además:
+
+// Aplicar descuento:
+// Si es ≥ 100.000 → 15%
+// Si es ≥ 50.000 → 10%
+// Si es menor → sin descuento
+
+// Mostrar:
+
+// Nombre transformado
+// Largo del nombre del producto
+// Precio original
+// Precio final
+// Clasificación
+
+// Ejercicio 21: Evaluación de frase y puntaje con múltiples condiciones
+// Crear una función que almacene una frase y un puntaje. Luego:
+
+// Convertir la frase a mayúsculas
+// Contar su largo
+// Clasificar el puntaje:
+// ≥ 90 → Excelente
+// ≥ 80 → Muy bueno
+// ≥ 70 → Bueno
+// ≥ 60 → Regular
+// < 60 → Deficiente
+
+// Además:
+
+// Clasificar la frase por tamaño:
+// 30 → Muy larga
+// 20 → Larga
+// 10 → Mediana
+// ≤ 10 → Corta
