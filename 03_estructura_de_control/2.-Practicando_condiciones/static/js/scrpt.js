@@ -230,6 +230,27 @@ function ejercicio16() {
 // 90 o más → Excelente
 // 70 o más → Bueno
 // Menor a 70 → Insuficiente
+function ejercicio17(){
+    let frase = "El lanzador de jabalina fue el tercero:";
+    let pun = 80;
+    let fraMinus = frase.toLowerCase();
+    if(pun >= 90){
+    alert(`Frase transformada: ${fraMinus}
+        \nLargo de la frase: ${fraMinus.length}
+        \nPuntaje: ${pun}
+        \nclasificación: Excelente.`)
+    }else if(pun >= 70){
+    alert(`Frase transformada: ${fraMinus}
+        \nLargo de la frase: ${fraMinus.length}
+        \nPuntaje: ${pun}
+        \nclasificación: bueno.`)
+    }else{
+    alert(`Frase transformada: ${fraMinus}
+        \nLargo de la frase: ${fraMinus.length}
+        \nPuntaje: ${pun}
+        \nclasificación: Insuficiente.`)
+    }
+}
 
 // Mostrar:
 // Frase transformada
@@ -332,6 +353,40 @@ function ejercicio19() {
 // ≥ 50.000 → Producto estándar
 // ≥ 20.000 → Producto económico
 // < 20.000 → Producto básico
+function ejercicio20(){
+    let pro3 = "consola"
+    let pre2 = 300000;
+    let proMinus = pro3.toLowerCase();
+    if(pre2 >= 200000){
+    alert(`nombre del producto: ${proMinus}
+        \nlargo de nombre del producto: ${proMinus.length}
+        \nprecio original: $${pre2}
+        \nprecio con descuento: $${pre2 - pre2*0.15}
+        \nClasificación: producto de lujo.`)
+    }else if(pre2 >= 100000){
+    alert(`nombre del producto: ${proMinus}
+        \nlargo de nombre del producto: ${proMinus.length}
+        \nprecio original: $${pre2}
+        \nprecio con descuento: $${pre2 - pre2*0.15}
+        \nClasificación: producto premium.`)
+    }else if(pre2 >= 50000){
+        alert(`nombre del producto: ${proMinus}
+        \nlargo de nombre del producto: ${proMinus.length}
+        \nprecio original: $${pre2}
+        \nprecio con descuento: $${pre2 - pre2*0.10}
+        \nClasificación: producto estándar.`)
+    }else if(pre2 >= 20000){
+    alert(`nombre del producto: ${proMinus}
+        \nlargo de nombre del producto: ${proMinus.length}
+        \nprecio original y final: $${pre2}
+        \nClasificación: producto económico.`)
+    }else{
+    alert(`nombre del producto: ${proMinus}
+        \nlargo de nombre del producto: ${proMinus.length}
+        \nprecio original y final: $${pre2}
+        \nClasificación: producto básico.`)
+    }
+}
 
 // Además:
 
@@ -359,6 +414,108 @@ function ejercicio19() {
 // ≥ 70 → Bueno
 // ≥ 60 → Regular
 // < 60 → Deficiente
+function ejercicio21(){
+    let fra = "Dicen que el ser humano valora el tiempo cuando no hay"
+    let pun1 = 100;
+    let fraMayus = fra.toUpperCase();
+    if(pun1 >= 90){
+    alert(`Puntaje: ${pun1}
+        \nCalificación de puntaje: excelente.`)
+        if(fraMayus.length >= 30){
+            alert(`Frase: ${fraMayus}
+        \nLargo de la frase: ${fraMayus.length}
+        \nCalificación de la frase: muy larga`)
+        }else if(fraMayus.length >= 20){
+            alert(`Frase: ${fraMayus}
+        \nLargo de la frase: ${fraMayus.length}
+        \nCalificación de la frase: larga`)
+        }else if(fraMayus.length >= 10){
+            alert(`Frase: ${fraMayus}
+        \nLargo de la frase: ${fraMayus.length}
+        \nCalificación de la frase: mediana`)
+        }else{
+            alert(`Frase: ${fraMayus}
+        \nLargo de la frase: ${fraMayus.length}
+        \nCalificación de la frase: corta`)
+        }
+    }else if(pun >= 80){
+    alert(`Puntaje: ${pun1}
+        \nCalificación de puntaje: muy bueno.`)
+        if(fraMayus.length >= 30){
+            alert(`Frase: ${fraMayus}
+        \nLargo de la frase: ${fraMayus.length}
+        \nCalificación de la frase: muy larga`)
+        }else if(fraMayus.length >= 20){
+            alert(`Frase: ${fraMayus}
+        \nLargo de la frase: ${fraMayus.length}
+        \nCalificación de la frase: larga`)
+        }else if(fraMayus.length >= 10){
+            alert(`Frase: ${fraMayus}
+        \nLargo de la frase: ${fraMayus.length}
+        \nCalificación de la frase: mediana`)
+        }else{
+            alert(`Frase: ${fraMayus}
+        \nLargo de la frase: ${fraMayus.length}
+        \nCalificación de la frase: corta`)
+        }
+    }else if(pun >= 70){
+    alert(`Puntaje: ${pun1}
+        \nCalificación de puntaje: bueno.`)
+        if(fraMayus.length >= 30){
+            alert(`Frase: ${fraMayus}
+        \nLargo de la frase: ${fraMayus.length}
+        \nCalificación de la frase: muy larga`)
+        }else if(fraMayus.length >= 20){
+            alert(`Frase: ${fraMayus}
+        \nLargo de la frase: ${fraMayus.length}
+        \nCalificación de la frase: larga`)
+        }else if(fraMayus.length >= 10){
+            alert(`Frase: ${fraMayus}
+        \nLargo de la frase: ${fraMayus.length}
+        \nCalificación de la frase: mediana`)
+        }else{
+            alert(`Frase: ${fraMayus}
+        \nLargo de la frase: ${fraMayus.length}
+        \nCalificación de la frase: corta`)
+        }
+    }else if(pun >= 60){
+    alert(`Puntaje: ${pun1}
+        \nCalificación de puntaje: regular.`)
+        if(fraMayus.length >= 30){
+            alert(`Frase: ${fraMayus}
+        \nLargo de la frase: ${fraMayus.length}
+        \nCalificación de la frase: muy larga`)
+        }else if(fraMayus.length >= 20){
+            alert(`Frase: ${fraMayus}
+        \nLargo de la frase: ${fraMayus.length}
+        \nCalificación de la frase: larga`)
+        }else if(fraMayus.length >= 10){
+            alert(`Frase: ${fraMayus}
+        \nLargo de la frase: ${fraMayus.length}
+        \nCalificación de la frase: mediana`)
+        }else{
+            alert(`Frase: ${fraMayus}
+        \nLargo de la frase: ${fraMayus.length}
+        \nCalificación de la frase: corta`)
+        }
+    }else{
+        alert(`Puntaje: ${pun1}
+        \nCalificación de puntaje: deficiente.`)
+        if(fraMayus.length >= 30){
+            alert(`Frase: ${fraMayus}
+        \nLargo de la frase: ${fraMayus.length}
+        \nCalificación de la frase: muy larga`)
+        }else if(fraMayus.length >= 20){
+            alert(`Frase: ${fraMayus}
+        \nLargo de la frase: ${fraMayus.length}
+        \nCalificación de la frase: larga`)
+        }else if(fraMayus.length >= 10){
+            alert(`Frase: ${fraMayus}
+        \nLargo de la frase: ${fraMayus.length}
+        \nCalificación de la frase: mediana`)
+        }
+    }
+}
 
 // Además:
 
