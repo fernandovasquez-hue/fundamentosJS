@@ -438,7 +438,7 @@ function ejercicio21(){
         \nLargo de la frase: ${fraMayus.length}
         \nCalificación de la frase: corta`)
         }
-    }else if(pun >= 80){
+    }else if(pun1 >= 80){
     alert(`Puntaje: ${pun1}
         \nCalificación de puntaje: muy bueno.`)
         if(fraMayus.length >= 30){
@@ -458,7 +458,7 @@ function ejercicio21(){
         \nLargo de la frase: ${fraMayus.length}
         \nCalificación de la frase: corta`)
         }
-    }else if(pun >= 70){
+    }else if(pun1 >= 70){
     alert(`Puntaje: ${pun1}
         \nCalificación de puntaje: bueno.`)
         if(fraMayus.length >= 30){
@@ -478,7 +478,7 @@ function ejercicio21(){
         \nLargo de la frase: ${fraMayus.length}
         \nCalificación de la frase: corta`)
         }
-    }else if(pun >= 60){
+    }else if(pun1 >= 60){
     alert(`Puntaje: ${pun1}
         \nCalificación de puntaje: regular.`)
         if(fraMayus.length >= 30){
