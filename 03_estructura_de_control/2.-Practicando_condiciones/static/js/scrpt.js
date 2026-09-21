@@ -5,7 +5,7 @@ console.log("conexion exitosa con js")
 // "Bienvenido Juan"
 
 function ejercicio1() {
-    let nombre = "juan";
+    let nombre = prompt("Ingrese su nombre: ");
     alert(`bienvenido ${nombre}`)
 }
 
@@ -15,8 +15,8 @@ function ejercicio1() {
 // "La suma es: 15"
 
 function ejercicio2() {
-    let sum1 = 10;
-    let sum2 = 5;
+    let sum1 = parseInt(prompt("Ingrese numero 1 para la suma"));
+    let sum2 = parseInt(prompt("Ingrese numero 2 para la suma"));
     let resultado = sum1 + sum2;
     alert(`El resultado de la suma es: ${resultado}`)
 }
@@ -27,8 +27,8 @@ function ejercicio2() {
 // "La resta es: 12"
 
 function ejercicio3() {
-    let res1 = 18;
-    let res2 = 6;
+    let res1 = parseInt(prompt("Ingrese numero 1 para la resta"));;
+    let res2 = parseInt(prompt("Ingrese numero 2 para la resta"));;
     let resultado2 = res1 - res2;
     alert(`El resultadoo de la resta es: ${resultado2}`)
 }
@@ -39,8 +39,8 @@ function ejercicio3() {
 // "La multiplicación es: 24"
 
 function ejercicio4() {
-    let mun1 = 8;
-    let mun2 = 3;
+    let mun1 = parseInt(prompt("Ingrese numero 1 para la suma"));;
+    let mun2 = parseInt(prompt("Ingrese numero 1 para la suma"));;
     let resultado3 = mun1 * mun2;
     alert(`El resultado de la muinltiplicacion es de: ${resultado3}`)
 }
